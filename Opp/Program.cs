@@ -3,9 +3,11 @@
 Rectangle r = new Rectangle();
 Square s = new Square();
 Triangle t = new Triangle();
+Circle c = new Circle();
 Console.WriteLine("Please select the following options\n 1. For Area of a Square \n " +
     "2. For Area of a Rectangle \n " +
-    "3. For Area of a Triangle ");
+    "3. For Area of a Triangle \n" +
+    " 4. For Area of A Circle");
 string? option = Console.ReadLine();
 int convertOption = Convert.ToInt32(option);
 switch (convertOption)
@@ -37,5 +39,11 @@ switch (convertOption)
         t.bredth = Convert.ToDouble(bredth);
         t.DisplayAreaofTriangle();
         break;
-
+    case 4:
+        c = new Circle();
+        Console.WriteLine("Enter Radius");
+        string? radius = Console.ReadLine();
+        c.radius = Convert.ToDouble(radius);
+        c.DisplayAreaofCircle();
+        break;
 }
