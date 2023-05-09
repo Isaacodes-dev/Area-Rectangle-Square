@@ -6,21 +6,21 @@ using System.Threading.Tasks;
 
 namespace Opp
 {
-    class Rectangle
+    class Triangle
     {
         public double length;
-        public double width;
+        public double bredth;
 
         public double GetArea()
         {
-            return length * width;
+            return (length * bredth)/2;
         }
 
-        public void DisplayAreaofRetangle()
+        public void DisplayAreaofTriangle()
         {
             Console.WriteLine($"Length: {length}");
-            Console.WriteLine($"Width: {width}");
-            Console.WriteLine($"Area of a Rectangle is: {GetArea()}");
+            Console.WriteLine($"Width: {bredth}");
+            Console.WriteLine($"Area of a Triangle is: {GetArea()}");
         }
     }
 }
